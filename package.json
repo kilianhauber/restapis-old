@@ -1,0 +1,26 @@
+{
+  "name": "restapis",
+  "version": "1.0.0",
+  "description": "Rest api Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/styles/tailwind.css -o ./dist/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kilihbr/restapis.git"
+  },
+  "keywords": [],
+  "author": "kilihbr (Kilian Hauber)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kilihbr/restapis/issues"
+  },
+  "homepage": "https://github.com/kilihbr/restapis#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  }
+}
