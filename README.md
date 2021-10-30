@@ -1,2 +1,2 @@
 # Rest APIs
-https://kilihbr.github.io/restapi
+https://kilihbr.github.io/restapis
