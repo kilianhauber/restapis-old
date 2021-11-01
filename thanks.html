@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Thanks for emailing us - UI Rocket - UI / UX PWA Designs</title>
+</head>
+
+<body>
+
+    <h1>Thanks</h1>
+    <div id="countdown"></div>
+
+    <script>
+        setTimeout(function () {
+            window.location.href = '/index.html';
+        }, 6000);
+
+        var timeleft = 5;
+        var downloadTimer = setInterval(function () {
+            if (timeleft <= 0) {
+                clearInterval(downloadTimer);
+                document.getElementById("countdown").innerHTML = "Zurück zur Startseite (0)";
+            } else {
+                document.getElementById("countdown").innerHTML = "Zurück zur Startseite (" + timeleft + ")";
+            }
+            timeleft -= 1;
+        }, 1000);
+
+    </script>
+</body>
+
+</html>
