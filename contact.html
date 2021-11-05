@@ -50,72 +50,79 @@
         </header>
 
         <main>
-            <div class="xl:px-96 lg:px-32 md:px-24 sm:px-16 px-6">
-                <div class="bg-mainblue p-8 rounded-3xl text-darkblue">
 
-                    <h1 class="flex justify-center text-ultrablue font-delagothicone text-4xl pb-8>">Contact me</h1>
+            <div class="2xl:px-96 xl:px-60 lg:px-40 md:px-32 sm:px-12 px-6">
 
-                    <div class="pt-6">
-
-                        <form action="https://formsubmit.co/kilian.hauber@zyonic.de" method="POST">
+                <div class="bg-mainblue rounded-2xl">
+                    <div class="px-8 py-16 flex justify-center">
+                        <form action="https://formsubmit.co/f697d45e97b332f276cd8a977281c9be" method="POST"
+                            class="w-full max-w-lg">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_next" value="https://kilihbr.github.io/restapis/thanks">
-
-                            <div class="grid md:grid-cols-2 grid-cols-1 gap-1">
-
-                                <div class="col-span-1">
-                                    <div class="p-3">
-                                        <h2 class="text-white py-1">Type of message:</h2>
-                                        <select class="rounded-xl pr-16 pl-2 py-1" name="type-of-message" id="type-of-message" required>
-                                            <option class="rounded-xl" value="">Something else</option>
-                                            <option class="rounded-xl" value="herr">Submit new API</option>
-                                            <option class="rounded-xl" value="frau">Found a mistake</option>
-                                        </select>
-                                    </div>
+                            <div class="flex flex-wrap -mx-3 mb-6">
+                                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                        for="grid-first-name">
+                                        First Name
+                                    </label>
+                                    <input
+                                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                                        id="grid-first-name" type="text" placeholder="Jane">
+                                    
                                 </div>
-
-                                <div class="col-span-1">
-                                    <div class="p-3">
-                                        <h2 class="text-white py-1">E-mail:</h2>
-                                        <input class="rounded-xl px-3 py-2" type="email" name="email"
-                                            placeholder="you@gmail.com" required>
-                                    </div>
+                                <div class="w-full md:w-1/2 px-3">
+                                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                        for="grid-last-name">
+                                        Last Name
+                                    </label>
+                                    <input
+                                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                        id="grid-last-name" type="text" placeholder="Doe">
                                 </div>
-
-                                <div class="col-span-1">
-                                    <div class="p-3">
-                                        <h2 class="text-white py-1">Name:</h2>
-                                        <input class="rounded-xl px-3 py-2" type="text" name="name"
-                                            placeholder="Kilian" required>
-                                    </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-3 mb-6">
+                                <div class="w-full px-3">
+                                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                        for="grid-password">
+                                        E-mail
+                                    </label>
+                                    <input
+                                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                        id="email" type="email">
+                                    <p class="text-gray-600 text-xs italic">Some tips - as long as needed</p>
                                 </div>
-
-                                <div class="col-span-1">
-                                    <div class="p-3">
-                                        <h2 class="text-white py-1">Title:</h2>
-                                        <input class="rounded-xl px-3 py-2" type="text" name="firstname"
-                                            placeholder="Kilian" required>
-                                    </div>
+                            </div>
+                            <div class="flex flex-wrap -mx-3 mb-6">
+                                <div class="w-full px-3">
+                                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                        for="grid-password">
+                                        Message
+                                    </label>
+                                    <textarea
+                                        class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                                        id="message"></textarea>
+                                    <p class="text-gray-600 text-xs italic">Re-size can be disabled by set by
+                                        resize-none / resize-y / resize-x / resize</p>
                                 </div>
-
-                                <div class="col-span-2">
-                                    <div class="p-3">
-                                        <h2 class="text-white py-1">Message:</h2>
-                                        <input class="rounded-xl px-3 py-2" type="text" name="firstname"
-                                            placeholder="Hello, ..." required>
-                                    </div>
+                            </div>
+                            <div class="md:flex md:items-center">
+                                <div class="md:w-1/3">
+                                    <button
+                                        class="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                                        type="submit">
+                                        Send
+                                    </button>
                                 </div>
-
+                                <div class="md:w-2/3"></div>
                             </div>
 
-                            <div class="pt-6">
-                                <button type="submit"
-                                    class="bg-ultrablue text-white py-2 px-10 rounded-xl">Send</button>
-                            </div>
                         </form>
                     </div>
                 </div>
+
             </div>
+
+
         </main>
 
     </div>
